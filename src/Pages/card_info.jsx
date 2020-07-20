@@ -26,10 +26,10 @@ const CardInfo = () => {
           </TableHead>
           <TableBody>
             {tableContent.map(row => 
-              <TableRow key={row.card}>
+              <TableRow key={row.cardID}>
                 <TableCell>{row.name}</TableCell>
-                <TableCell>{row.card}</TableCell>
-                <TableCell>{Date()}</TableCell>
+                <TableCell>{row.cardID}</TableCell>
+                <TableCell>{row.added}</TableCell>
               </TableRow>
             )}
           </TableBody>
