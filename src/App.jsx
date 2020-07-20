@@ -15,7 +15,7 @@ const App = () => {
   return(
     <BrowserRouter>
       <TitleBar currentPage={currentPage}/>
-      <SideMenu onClick={changeCurrentPage}/>
+      <SideMenu onClick={changeCurrentPage} selected={currentPage}/>
 
       <Toolbar />
 

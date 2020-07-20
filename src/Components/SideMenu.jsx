@@ -1,8 +1,8 @@
 import React from 'react'
-import { Drawer, List, ListItem, ListItemText } from '@material-ui/core'
+import { Drawer, List, ListItem, ListItemText, Toolbar, } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 
-import styles from '../Styles/SideMenu'
+import styles from '../Styles/Components'
 
 const SideMenu = props => {
   const classes = styles()
@@ -10,12 +10,11 @@ const SideMenu = props => {
   return(
     <Drawer variant='permanent' anchor='left' className={classes.drawer}>
       <List>
+        <Toolbar />
         {['card_info', 'card_record'].map(text => (
-          <Link key={text} to={`/${text}`}>
-          <ListItem button onClick={() => props.onClick(text)}>
+          <ListItem key={text} button onClick={() => props.onClick(text)} selected={props.selected === text} component={Link} to={`/${text}`}>
             <ListItemText primary={text} />
           </ListItem>
-          </Link>
         ))}
       </List>
     </Drawer>

@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles'
 
-import { drawerWidth } from './SideMenu'
+import { drawerWidth } from './Components'
 
 const styles = makeStyles(themes => ({
   container: {

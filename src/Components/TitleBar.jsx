@@ -1,12 +1,12 @@
 import React from 'react'
 import { AppBar, Toolbar, Typography } from '@material-ui/core'
 
-import styles from '../Styles/TitleBar'
+import styles from '../Styles/Components'
 
 const TitleBar = props => {
   const classes = styles()
   return(
-    <AppBar className={classes.titleBar}>
+    <AppBar className={classes.title} elevation={0}>
       <Toolbar>
         <Typography>
           {props.currentPage}
