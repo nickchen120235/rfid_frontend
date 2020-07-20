@@ -11,7 +11,7 @@ const SideMenu = props => {
     <Drawer variant='permanent' anchor='left' className={classes.drawer}>
       <List>
         <Toolbar />
-        {['card_info', 'card_record'].map(text => (
+        {['add_card', 'card_info', 'card_record'].map(text => (
           <ListItem key={text} button onClick={() => props.onClick(text)} selected={props.selected === text} component={Link} to={`/${text}`}>
             <ListItemText primary={text} />
           </ListItem>

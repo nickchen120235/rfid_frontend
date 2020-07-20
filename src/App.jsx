@@ -7,6 +7,7 @@ import SideMenu from './Components/SideMenu'
 
 import CardInfo from './Pages/card_info'
 import CardRecord from './Pages/card_record'
+import AddCard from './Pages/add_card'
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
       <Switch>
         <Route path='/card_info'><CardInfo /></Route>
         <Route path='/card_record'><CardRecord /></Route>
+        <Route path='/add_card'><AddCard /></Route>
       </Switch>
     </BrowserRouter>
   )
